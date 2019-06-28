@@ -1,15 +1,9 @@
 {
-  "name": "typescript-sourcemaps",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "build": "webpack",
     "start": "electron dist/main.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "electron": "^5.0.6",
     "ts-loader": "^6.0.4",

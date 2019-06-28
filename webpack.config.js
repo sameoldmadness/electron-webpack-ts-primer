@@ -1,9 +1,11 @@
 const path = require('path')
 
-const baseConfig = {
+const electronConfig = (type) => ({
+  entry: `./src/${type}.ts`,
+  target: `electron-${type}`,
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: `${type}.js`
   },
   mode: "development",
   devtool: "source-map",
@@ -19,14 +21,6 @@ const baseConfig = {
   resolve: {
     extensions: [".ts"]
   }
-}
-
-const electronConfig = (type) => ({
-  ...baseConfig,
-  entry: {
-    [type]: `./src/${type}.ts`
-  },
-  target: `electron-${type}`,
 })
 
 module.exports = [
