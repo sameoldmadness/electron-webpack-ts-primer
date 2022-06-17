@@ -5,7 +5,7 @@
     "start": "electron dist/main.js"
   },
   "dependencies": {
-    "electron": "^5.0.6",
+    "electron": "^15.5.5",
     "ts-loader": "^6.0.4",
     "typescript": "^3.5.2",
     "webpack": "^4.35.0",
